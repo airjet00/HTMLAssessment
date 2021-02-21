@@ -11,9 +11,10 @@
       <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <br>
-    <p>
 <!-- indent and italic/em -->
-      <strong>Integer</strong> <em>auctor est ac fringilla euismod. Donec laoreet urna vel diam blandit venenatis. Nam fermentum turpis a mauris condimentum, vitae faucibus leo commodo.</em></p>
+    <p><span style="padding-left: 20px; display:block">
+      <strong>Integer</strong> <em>auctor est ac fringilla euismod. Donec laoreet urna vel diam blandit venenatis. Nam fermentum turpis a mauris condimentum, vitae faucibus leo commodo.</em></span>
+    </p>
     <br>
     <p>
       <strong>Vestibulum</strong> elit nisi, posuere ut hendrerit a, molestie eu leo. Donec sit amet ullamcorper turpis. Mauris eu tellus blandit turpis fermentum dapibus eget sed ex. Vivamus auctor in velit ac suscipit. In hac habitasse platea dictumst.
@@ -62,14 +63,92 @@
         </tr>
 <!--row 6 total, total scores by quarter, final total score-->
         <tfoot>
-          <td>Total</td>
-          <td>13</td>
-          <td>13</td>
-          <td>13</td>
-          <td>13</td>
-          <td>52</td>
+          <th>Total</th>
+<!--leaving with td and strong as it lines with other data better -->
+          <td><strong>13</strong></td>
+          <td><strong>13</strong></td>
+          <td><strong>13</strong></td>
+          <td><strong>13</strong></td>
+          <td><strong>52</strong></td>
         </tfoot>
     </table>
+
     <h1>LIST</h1>
+    <table>
+      <tr>
+
+        <td>
+
+<!--Chicago bears info and image w/link-->
+    <a href="https://www.chicagobears.com/">
+      <img src="https://static.www.nfl.com/t_q-best/league/api/clubs/logos/CHI" width="100" height="50"alt="Chicago Bears Logo">
+      <h4>Chicago Bears</h4></a>
+    <ul>
+      <li>Head Coach: Matt Nagy</li>
+      <li>Offensive Coordinator: Bill Lazor</li>
+      <li>Defensive Coordinator: Sean Desai</li>
+      <li>Quarter Backs:</li>
+        <ol>
+          <li>Mitchell Trubisky</li>
+          <li>Nick Foles</li>
+          <li>Hope a first round pick</li>
+        </ol>
+    </ul>
+      </td>
+      <td><h3>&nbsp&nbsp&nbsp VS &nbsp&nbsp&nbsp</h3></td>
+      <td>
+<!--Denver Broncos info and image w/link-->
+    <a href="https://www.denverbroncos.com/">
+    <img src="https://static.www.nfl.com/t_q-best/league/api/clubs/logos/DEN" width="100" height="50" alt="Denver Broncos Logo">
+    <h4>Denver Broncos</h4>
+    </a>
+    <ul>
+      <li>Head Coach: Vic Fangio</li>
+      <li>Offensive Coordinator: Pat Shurmur</li>
+      <li>Defensive Coordinator: Ed Donatell</li>
+      <li>Quarter Backs:</li>
+        <ol>
+          <li>Drew Lock</li>
+          <li>Brett Rypien</li>
+          <li>Jeff Driskel</li>
+        </ol>
+    </ul>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+<!--Form for user info -->
+    <h1>FORM</h1>
+    <form method="post">
+<!--user name -->
+      First Name: <input type="text" name="firstname">
+      Last Name: <input type="text" name="firstname">
+      <br>
+      <br>
+<!--user favorite sport -->
+      Favorite Sport: <br> <select name="Favorite Sport:">
+
+        <option value="football">Football</option>
+        <option value="baseball">Baseball</option>
+        <option value="soccer">Soccer</option>
+        <option value="tennis">Tennis</option>
+<!--user had done for sports -->
+      </select>
+      <br><br>I have: <input type="checkbox" name="attended" value="Attended">Attended
+      <input type="checkbox" name="Played" value="played">Played
+      <input type="checkbox" name="Coached" value="coached">Coached
+      <input type="checkbox" name="Bet on this sport" value="bet">Bet on this sport.<br>
+<!--user preference -->
+      <br>For this sport I prefer the: <input type="radio" name="Amateur" value="amateur">Amateur
+      <input type="radio" name="College" value="college">College
+      <input type="radio" name="Professional" value="Pro">Professional
+<!--submit -->
+      <br><br><input type="submit" value="Submit Query">
+    </form>
+
+    <br>
+    <br>
+    <br>
   </body>
 </html>
